@@ -88,12 +88,22 @@ All hosts must be provisioned according to Rancher's [Requirements](https://ranc
 
 3. To start the server and agent run this command on your locally hosted machine:
 
-`docker run -d --restart=unless-stopped -p 8080:80 -p 8443:443 rancher/rancher:latest`
+    `docker run -d --restart=unless-stopped -p 8080:80 -p 8443:443 rancher/rancher:latest`
+
+
+- This spins up the Rancher Server container, which also acts as the master node in your default Kubernetes cluster. You can also use Rancher Server to manage an existing Kubernetes cluster on other services such the IBM Cloud Container Service as well.
 
 ---
 
 # Linking Google GKS to Rancher 2.0:
 
+1. Once the container has is started issue command `sudo docker ps` to check what external port your container was set push out from.
+2. Then navigate to http://hostmachine:insertporthere and you’ll be presented with the initial interface of Rancher's Dashboard.
+3. You will then be prompted to insert your default password to login to the web interface with and then with:
+
+4. After that you will then be asked to specify your access URL for all rancher related services (make sure the ip is publicy accessable from GCP)
+
+5. Once everything is set up you will then 
 
 
 Troubleshooting:
@@ -202,4 +212,5 @@ You'll need to run Cloud SQL Proxy on whichever machine is accessing Postgres, e
 Connect to the Postgres instance:
 
     $ sudo psql -h 127.0.0.1 -p 5432 -U postgres -W
+
 
