@@ -97,22 +97,24 @@ All hosts must be provisioned according to Rancher's [Requirements](https://ranc
 
 # Linking Google GKS to Rancher 2.0:
 
-1. Once the container has is started issue command `sudo docker ps` to check what external port your container was set push out from.
-2. Then navigate to http://hostmachine:insertporthere and you’ll be presented with the initial interface of Rancher's Dashboard.
-3. You will then be prompted to insert your default password to login to the web interface with and then with:
+    1. Once the container has is started issue command `sudo docker ps` to check what external port your container was set push out from.
 
-4. After that you will then be asked to specify your access URL for all rancher related services (make sure the ip is publicy accessable from GCP)
+    2. Then navigate to http://hostmachine:insertporthere and you’ll be presented with the initial interface of Rancher's Dashboard.
+    
+    3. You will then be prompted to insert your default password to login to the web interface with and then with:
 
-5. Once everything is set up you will then 
+    4. After that you will then be asked to specify your access URL for all rancher related services (make sure the ip is publicy accessable from GCP)
+
+    5. Once everything is set up you will then 
 
 
-Troubleshooting:
+### Troubleshooting:
 
-your rancher server is behind the public network so the GKS or EKS's callback cannot connect to your rancher server successfully, you will need to add a proxy to expose your rancher server and make sure the proxy IP and port and configured properly within the rancher settings `https://your-rancher-server-url/g/settings/advanced`.
+    Your rancher server is behind the public network so the GKS or EKS's callback cannot connect to your rancher server successfully, you will need to add a proxy to expose your rancher server and make sure the proxy IP and port and configured properly within the rancher settings `https://your-rancher-server-url/g/settings/advanced`.
 
-![alt text](deployment_ports.png)
+    ![alt text](deployment_ports.png)
 
-Note: if you check your Google GKS the newly added k8s cluster should already be there, remember to remove it if you have created in previous!
+    Note: if you check your Google GKS the newly added k8s cluster should already be there, remember to remove it if you have created in previous!
 ---
 
 # Installing Security Monkey through GCP (Netflix Documentation):
