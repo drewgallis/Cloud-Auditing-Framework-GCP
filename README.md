@@ -126,17 +126,18 @@ Your rancher server is behind the public network so the GKS or EKS's callback ca
 ![alt text](pics/deployment_ports.png)
 
 Note: if you check your Google GKS the newly added k8s cluster should already be there, remember to remove it if you have created in previous!
+
 ---
 
 # Installing Security Monkey through GCP (Netflix Documentation):
 
 ### Install gcloud
----------------
+
 
 If you haven't already, install *gcloud* from the [downloads](https://cloud.google.com/sdk/downloads) page.  *gcloud* enables you to administer VMs, IAM policies, services and more from the command line.
 
 ### Setup Service Account
----------------------
+=====================
 
 To restrict which permissions Security Monkey has to your projects, we'll create a [Service Account](https://cloud.google.com/compute/docs/access/service-accounts) with a special role.
 
@@ -155,7 +156,7 @@ To restrict which permissions Security Monkey has to your projects, we'll create
    -  Press "Add".
 
 ### Enable IAM API
----------------
+
 
 For each GCP project you would like Security Monkey to access, you'll need to enable the IAM API.  Visit the [IAM API page](https://console.cloud.google.com/apis/api/iam.googleapis.com/overview) page in the web console
  and click 'Enable API' at the top of the screen. When dealing with many projects, you might prefer to do this with the gcloud command.  For details on how to enable services with gcloud, visit the
@@ -193,7 +194,7 @@ We will connect to the new instance over ssh with the gcloud command:
 Or by initalizing a gloud shell through the gcp suite.
 
 ### Postgres on GCP
-===============
+=====================
 
 If you are deploying Security Monkey on GCP and decide to use Cloud SQL, it's recommended to run [Cloud SQL Proxy](https://cloud.google.com/sql/docs/postgres/sql-proxy) to connect to Postgres. To use Postgres on Cloud SQL, create a new instance from your GCP console and create a password for the `postgres` user when Cloud SQL prompts you. (If you ever need to reset the `postgres` user's password, refer to the [Cloud SQL documentation](https://cloud.google.com/sql/docs/postgres/create-manage-users).)
 
