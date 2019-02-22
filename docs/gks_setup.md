@@ -27,7 +27,7 @@
 
 Your rancher server is behind the public network so the GKS or EKS's callback cannot connect to your rancher server successfully, you will need to add a proxy to expose your rancher server and make sure the proxy IP and port and configured properly within the rancher settings `https://your-rancher-server-url/g/settings/advanced`.
 
-![alt text](..pics/deployment_ports.png)
+![alt text](../pics/deployment_ports.png)
 
 Note: if you check your Google GKS the newly added k8s cluster should already be there, remember to remove it if you have created in previous!
 
