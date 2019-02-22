@@ -34,3 +34,6 @@
 `sudo mv docker-cleanup /usr/local/bin/docker-cleanup`
 
 `sudo chmod +x /usr/local/bin/docker-cleanup`
+
+[Back to home](README.md)
+[On to the next step](docs/gks_setup.md)
