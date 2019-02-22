@@ -37,7 +37,7 @@ https://cloud.google.com/docs/
  2. [Install Rancher on your Local Machine](docs/rancher_setup.md)
  3. [Link Rancher Server Cluster to Google Cloud](docks/gks_setup.md)
  4. [Setup Security Monkey Container on GCP](docs/secmonk_gcp.md)
- 5. [Initalize/Configure Security Monkey](docs/secmonk_init/md)
+ 5. [Initalize/Configure Security Monkey](docs/secmonk_init.md)
 
 
 
