@@ -1,5 +1,6 @@
 # Cloud Auditing Framework (through GCP)
-Project goal is centered around Building a custom auditing framework through Docker utilizing google cloud services[GKS], kubernetes management service[Rancher], and an auditing tool[Security Monkey]
+
+*Project goal is centered around Building a custom auditing framework through Docker utilizing google cloud services [GKS], kubernetes management service [Rancher], and utilizing an auditing tool [Security Monkey]*
 
 ### Introduction
 - With the rise in cloud technologies utilized in the Idustry today, hosting services on the cloud is becoming an industry best standard centered around efficiency and availability. 
