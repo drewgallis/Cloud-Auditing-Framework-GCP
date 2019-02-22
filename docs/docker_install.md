@@ -35,6 +35,6 @@
 
 `sudo chmod +x /usr/local/bin/docker-cleanup`
 
-[Back to home](https://github.com/drewgallis/Cloud-Auditing-Framework-GCP-)
+[Back to home](../README.md)
 
 [On to the next step](gks_setup.md)
