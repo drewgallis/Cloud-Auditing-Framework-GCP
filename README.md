@@ -132,7 +132,7 @@ Note: if you check your Google GKS the newly added k8s cluster should already be
 
 ---
 
-# Installing Security Monkey through GCP (Netflix Documentation):
+# Installing Security Monkey through GCP [Netflix Docs](https://github.com/Netflix/security_monkey/tree/develop/docs)
 =====================
 
 ### Install gcloud
@@ -166,7 +166,7 @@ For each GCP project you would like Security Monkey to access, you'll need to en
   [service-management](https://cloud.google.com/service-management/enable-disable#enabling_services) page.  The IAM service name is 'iam.googleapis.com'.
 
 
-### Security Monkey instance on GCP
+### Creating Security Monkey instance on GCP (Ubuntu 16.04)
 
 
 Create an instance running Ubuntu 16.04 LTS using our 'securitymonkey' service account.
@@ -231,7 +231,7 @@ Connect to the Postgres instance:
     $ sudo psql -h 127.0.0.1 -p 5432 -U postgres -W
 
 
-# Setting up and Linking Accounts to Audit(Netflix Documentation):
+# Setting up and Linking Accounts to Audit
 =====================
 
 ### Configure the Application
