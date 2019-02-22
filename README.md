@@ -34,6 +34,7 @@ Documentation used when setting up services on/through GCP - compute engine reso
 •	Steps to reproduce
 
 # Installing Docker (local machine):
+=====================
 
 ### Script only works if sudo caches the password for a few minutes:
 
@@ -72,6 +73,7 @@ Documentation used when setting up services on/through GCP - compute engine reso
 ---
 
 # Setting up Rancher 2.0 (local machine):
+=====================
 
 1. Provision a single Linux host:
 All hosts must be provisioned according to Rancher's [Requirements](https://rancher.com/docs/rancher/v2.x/en/installation/requirements/) to launch your Rancher Server.
@@ -96,6 +98,7 @@ All hosts must be provisioned according to Rancher's [Requirements](https://ranc
 ---
 
 # Linking Google GKS to Rancher 2.0:
+=====================
 
 1. Once the container has is started issue command `sudo docker ps` to check what external port your container was set push out from.
 
@@ -130,6 +133,7 @@ Note: if you check your Google GKS the newly added k8s cluster should already be
 ---
 
 # Installing Security Monkey through GCP (Netflix Documentation):
+=====================
 
 ### Install gcloud
 
@@ -137,7 +141,6 @@ Note: if you check your Google GKS the newly added k8s cluster should already be
 If you haven't already, install *gcloud* from the [downloads](https://cloud.google.com/sdk/downloads) page.  *gcloud* enables you to administer VMs, IAM policies, services and more from the command line.
 
 ### Setup Service Account
-=====================
 
 To restrict which permissions Security Monkey has to your projects, we'll create a [Service Account](https://cloud.google.com/compute/docs/access/service-accounts) with a special role.
 
@@ -163,7 +166,7 @@ For each GCP project you would like Security Monkey to access, you'll need to en
   [service-management](https://cloud.google.com/service-management/enable-disable#enabling_services) page.  The IAM service name is 'iam.googleapis.com'.
 
 
-### Security Monkey installation on GCP:
+### Security Monkey instance on GCP (Netflix Documentation):
 =====================
 
 Create an instance running Ubuntu 16.04 LTS using our 'securitymonkey' service account.
@@ -193,7 +196,7 @@ We will connect to the new instance over ssh with the gcloud command:
 
 Or by initalizing a gloud shell through the gcp suite.
 
-### Postgres on GCP
+### Postgres on GCP (Netflix Documentation)
 =====================
 
 If you are deploying Security Monkey on GCP and decide to use Cloud SQL, it's recommended to run [Cloud SQL Proxy](https://cloud.google.com/sql/docs/postgres/sql-proxy) to connect to Postgres. To use Postgres on Cloud SQL, create a new instance from your GCP console and create a password for the `postgres` user when Cloud SQL prompts you. (If you ever need to reset the `postgres` user's password, refer to the [Cloud SQL documentation](https://cloud.google.com/sql/docs/postgres/create-manage-users).)
