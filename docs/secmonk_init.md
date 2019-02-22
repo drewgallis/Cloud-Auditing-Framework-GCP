@@ -74,3 +74,5 @@ all your configured accounts in Security Monkey, fetch details about the account
 and then audit the items for any issues. 
 
 The `find_changes` command can be further scoped to account and technology with the `-a account` and `-m technology` parameters.
+
+[Back to home](../README.md)

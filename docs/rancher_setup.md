@@ -20,3 +20,7 @@ All hosts must be provisioned according to Rancher's [Requirements](https://ranc
 
 
 - This spins up the Rancher Server container, which also acts as the master node in your default Kubernetes cluster. You can also use Rancher Server to manage an existing Kubernetes cluster on other services such the IBM Cloud Container Service as well.
+
+[Back to home](../README.md)
+
+[On to the next step](secmonk_gcp.md)

@@ -95,3 +95,7 @@ You'll need to run Cloud SQL Proxy on whichever machine is accessing Postgres, e
 Connect to the Postgres instance:
 
     $ sudo psql -h 127.0.0.1 -p 5432 -U postgres -W
+
+[Back to home](../README.md)
+
+[On to the next step](secmonk_init.md)
